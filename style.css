@@ -378,3 +378,47 @@ font-size:24px;
     color:#ffffff;
     letter-spacing:5px;
 }
+@media(max-width:768px){
+
+    .logo{
+        font-size:28px;
+        letter-spacing:1px;
+        padding:5px;
+    }
+
+    .top-header{
+        padding:15px 10px;
+    }
+
+    .contact-header{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        gap:5px;
+        flex-wrap:nowrap;
+        overflow-x:auto;
+        padding:10px 5px;
+    }
+
+    .phone-link,
+    .email-link{
+        font-size:12px;
+        white-space:nowrap;
+    }
+
+    .share-btn{
+        font-size:12px;
+        padding:6px 10px;
+        white-space:nowrap;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+}
