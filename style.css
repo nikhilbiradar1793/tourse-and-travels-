@@ -206,3 +206,29 @@ font-size:24px;
 .phone-link:hover{
     color:#00d4ff;
 }
+
+.contact-link{
+    text-decoration:none;
+    color:#0f172a;
+    font-weight:bold;
+}
+
+.contact-link:hover{
+    color:#00b7ff;
+}
+
+.call-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background:#16a34a;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.call-btn:hover{
+    background:#15803d;
+}
