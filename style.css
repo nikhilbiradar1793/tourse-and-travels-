@@ -369,3 +369,12 @@ font-size:24px;
         0 0 10px #00d4ff,
         0 0 20px #00d4ff;
 }
+
+.logo{
+    font-family:'Cinzel', serif;
+    font-size:72px;
+    font-weight:900;
+    text-align:center;
+    color:#ffffff;
+    letter-spacing:5px;
+}
