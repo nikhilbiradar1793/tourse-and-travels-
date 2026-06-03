@@ -283,12 +283,43 @@ font-size:24px;
 @media(max-width:768px){
 
     .top-header h1{
-        font-size:24px;
+        font-size:22px;
     }
 
     .contact-header{
-        flex-direction:column;
-        gap:10px;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        gap:5px;
+        flex-wrap:nowrap;
+        padding:10px 5px;
+        overflow-x:auto;
+    }
+
+    .phone-link,
+    .email-link{
+        font-size:12px;
+        white-space:nowrap;
+    }
+
+    .share-btn{
+        font-size:12px;
+        padding:6px 10px;
+        white-space:nowrap;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .logo{
+        font-size:24px;
+        letter-spacing:1px;
     }
 
 }
