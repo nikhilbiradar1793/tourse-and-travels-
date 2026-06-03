@@ -232,3 +232,17 @@ font-size:24px;
 .call-btn:hover{
     background:#15803d;
 }
+
+<header>
+    <div class="logo">ANKUSH TOURS & TRAVELS</div>
+
+    <div class="header-right">
+        <a href="tel:+919665467585" class="phone-link">
+            📞 9665467585
+        </a>
+
+        <button class="share-btn" onclick="shareWebsite()">
+            🔗 Share Website
+        </button>
+    </div>
+</header>
