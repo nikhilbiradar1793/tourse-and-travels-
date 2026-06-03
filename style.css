@@ -232,17 +232,63 @@ font-size:24px;
 .call-btn:hover{
     background:#15803d;
 }
+.top-header{
+    background:#020617;
+    text-align:center;
+    padding:20px;
+}
 
-<header>
-    <div class="logo">ANKUSH TOURS & TRAVELS</div>
+.top-header h1{
+    color:#00d4ff;
+    font-size:38px;
+    margin:0;
+    font-weight:700;
+}
 
-    <div class="header-right">
-        <a href="tel:+919665467585" class="phone-link">
-            📞 9665467585
-        </a>
+.contact-header{
+    background:#0f172a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    padding:12px;
+    flex-wrap:wrap;
+}
 
-        <button class="share-btn" onclick="shareWebsite()">
-            🔗 Share Website
-        </button>
-    </div>
-</header>
+.phone-link,
+.email-link{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.phone-link:hover,
+.email-link:hover{
+    color:#00d4ff;
+}
+
+.share-btn{
+    background:#00b7ff;
+    color:white;
+    border:none;
+    padding:8px 18px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.share-btn:hover{
+    background:#0284c7;
+}
+
+@media(max-width:768px){
+
+    .top-header h1{
+        font-size:24px;
+    }
+
+    .contact-header{
+        flex-direction:column;
+        gap:10px;
+    }
+
+}
