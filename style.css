@@ -423,3 +423,19 @@ font-size:24px;
     }
 
 }
+
+.logo{
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 3px;
+    margin: 15px 0;
+    text-transform: uppercase;
+    background: transparent;
+}
+
+.logo span{
+    color: #00d4ff;
+    text-shadow: 0 0 10px #00d4ff;
+}
