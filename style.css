@@ -1,441 +1,380 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
 }
 
 body{
-background:#f5f7fa;
+    background:#f5f7fa;
+    color:#333;
 }
 
-header{
-background:#0f172a;
-color:white;
-padding:15px 5%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:999;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    background:#003366;
+    box-shadow:0 3px 8px rgba(0,0,0,.2);
 }
 
-.logo{
-font-size:30px;
-font-weight:bold;
-color:#00d4ff;
-}
-
-.contact{
-font-size:15px;
-}
-
-.hero{
-height:80vh;
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-color:white;
-padding:20px;
-}
-
-.hero h1{
-font-size:55px;
-margin-bottom:15px;
-}
-
-.hero p{
-font-size:22px;
-}
-
-.section{
-padding:60px 8%;
-}
-
-.section-title{
-text-align:center;
-font-size:35px;
-margin-bottom:40px;
-color:#0f172a;
-}
-
-.ertiga{
-display:flex;
-justify-content:center;
-}
-
-.ertiga img{
-width:90%;
-max-width:900px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.3);
-}
-
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.service{
-background:white;
-padding:25px;
-border-radius:15px;
-text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-transition:.3s;
-}
-
-.service:hover{
-transform:translateY(-5px);
-}
-
-.packages{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-}
-
-.package{
-background:white;
-padding:30px;
-border-radius:15px;
-text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-}
-
-.price{
-font-size:32px;
-font-weight:bold;
-color:#16a34a;
-margin:15px 0;
-}
-
-button{
-background:#0f172a;
-color:white;
-padding:12px 25px;
-border:none;
-border-radius:8px;
-cursor:pointer;
-font-size:16px;
-transition:.3s;
-}
-
-button:hover{
-background:#00b7ff;
-}
-
-.contact-box{
-background:white;
-padding:30px;
-text-align:center;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-}
-
-footer{
-background:#0f172a;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:30px;
-}
-
-.overlay{
-display:none;
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,.5);
-z-index:999;
-}
-
-.popup{
-display:none;
-position:fixed;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-background:white;
-padding:30px;
-border-radius:15px;
-text-align:center;
-width:320px;
-z-index:1000;
-box-shadow:0 0 20px rgba(0,0,0,.3);
-}
-
-.popup h2{
-margin-bottom:15px;
-}
-
-@media(max-width:768px){
-
-header{
-flex-direction:column;
-gap:10px;
-text-align:center;
-}
-
-.hero h1{
-font-size:35px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-.logo{
-font-size:24px;
-}
-
-}
-.phone-link{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-.phone-link:hover{
-    color:#00d4ff;
-}
-
-.contact-link{
-    text-decoration:none;
-    color:#0f172a;
-    font-weight:bold;
-}
-
-.contact-link:hover{
-    color:#00b7ff;
-}
-
-.call-btn{
-    display:inline-block;
-    margin-top:15px;
-    padding:12px 25px;
-    background:#16a34a;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-    transition:0.3s;
-}
-
-.call-btn:hover{
-    background:#15803d;
-}
-.top-header{
-    background:#020617;
-    text-align:center;
-    padding:20px;
-}
-
-.top-header h1{
-    color:#00d4ff;
-    font-size:38px;
-    margin:0;
+.nav-logo{
+    color:#fff;
+    font-size:24px;
     font-weight:700;
 }
 
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#FFD700;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    background:#fff;
+    padding:20px;
+    text-align:center;
+}
+
+.logo{
+    font-size:36px;
+    font-weight:bold;
+    color:#003366;
+}
+
+.logo span{
+    color:#ff6600;
+}
+
 .contact-header{
-    background:#0f172a;
+    margin-top:20px;
     display:flex;
     justify-content:center;
-    align-items:center;
-    gap:25px;
-    padding:12px;
     flex-wrap:wrap;
+    gap:15px;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.phone-link,
+.email-link,
+.share-btn,
+.call-btn,
+.book-btn{
+
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:30px;
+    border:none;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
 }
 
 .phone-link,
-.email-link{
+.call-btn,
+.book-btn{
+    background:#28a745;
     color:white;
-    text-decoration:none;
-    font-weight:600;
 }
 
-.phone-link:hover,
-.email-link:hover{
-    color:#00d4ff;
+.email-link{
+    background:#007bff;
+    color:white;
 }
 
 .share-btn{
-    background:#00b7ff;
+    background:#ff6600;
     color:white;
-    border:none;
-    padding:8px 18px;
-    border-radius:8px;
-    cursor:pointer;
 }
 
-.share-btn:hover{
-    background:#0284c7;
-}
-
-@media(max-width:768px){
-
-    .top-header h1{
-        font-size:22px;
-    }
-
-    .contact-header{
-        display:flex;
-        flex-direction:row;
-        justify-content:space-between;
-        align-items:center;
-        gap:5px;
-        flex-wrap:nowrap;
-        padding:10px 5px;
-        overflow-x:auto;
-    }
-
-    .phone-link,
-    .email-link{
-        font-size:12px;
-        white-space:nowrap;
-    }
-
-    .share-btn{
-        font-size:12px;
-        padding:6px 10px;
-        white-space:nowrap;
-    }
-
-    .hero h1{
-        font-size:32px;
-    }
-
-    .hero p{
-        font-size:16px;
-    }
-
-    .logo{
-        font-size:24px;
-        letter-spacing:1px;
-    }
-
-}
-.book-btn{
-    display:inline-block;
-    text-decoration:none;
-    background:#16a34a;
-    color:white;
-    padding:12px 25px;
-    border-radius:8px;
-    font-size:16px;
-    font-weight:bold;
-    transition:0.3s;
-}
-
+.phone-link:hover,
+.email-link:hover,
+.share-btn:hover,
+.call-btn:hover,
 .book-btn:hover{
-    background:#15803d;
-    transform:translateY(-2px);
+    transform:translateY(-3px);
+    opacity:.9;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    height:80vh;
+    background:linear-gradient(rgba(0,0,0,.5),
+               rgba(0,0,0,.5)),
+url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:24px;
+}
+
+/* ===========================
+   SECTION
+=========================== */
+
+.section{
+    padding:70px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:36px;
+    color:#003366;
+}
+
+/* ===========================
+   VEHICLE IMAGE
+=========================== */
+
+.ertiga{
+    display:flex;
+    justify-content:center;
+}
+
+.ertiga img{
+    width:100%;
+    max-width:700px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+/* ===========================
+   SERVICES
+=========================== */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.service{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.service:hover{
+    transform:translateY(-10px);
+}
+
+.service h3{
+    color:#003366;
+    margin-bottom:15px;
+}
+
+/* ===========================
+   PACKAGES
+=========================== */
+
+.packages{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
 }
 
 .package{
     background:white;
-    padding:25px;
     border-radius:15px;
+    padding:25px;
     text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.package:hover{
+    transform:scale(1.05);
+}
+
+.package h3{
+    color:#003366;
 }
 
 .price{
-    font-size:30px;
-    color:#16a34a;
+    color:#ff6600;
+    font-size:32px;
     font-weight:bold;
     margin:15px 0;
 }
-.logo{
-    font-family:'Segoe UI', sans-serif;
-    font-size:38px;
-    font-weight:800;
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact-box{
+    background:white;
+    max-width:600px;
+    margin:auto;
+    padding:35px;
+    border-radius:15px;
     text-align:center;
-    color:#ffffff;
-    letter-spacing:2px;
-    white-space:nowrap;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
 }
 
-.logo span{
-    color:#00d4ff;
-    text-shadow:
-        0 0 10px #00d4ff,
-        0 0 20px #00d4ff;
+.contact-box p{
+    margin:15px 0;
+    font-size:18px;
 }
 
-.top-header{
-    background:#020617;
-    text-align:center;
-    padding:15px;
+.contact-link{
+    text-decoration:none;
+    color:#003366;
+    font-weight:600;
 }
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* ===========================
+   POPUP
+=========================== */
+
+.overlay{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.6);
+    display:none;
+    z-index:999;
+}
+
+.popup{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:350px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    display:none;
+    z-index:1000;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.popup button{
+    margin-top:20px;
+    padding:10px 20px;
+    background:#28a745;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.popup button:hover{
+    background:#218838;
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
 
 @media(max-width:768px){
 
-    .logo{
-        font-size:18px;
-        letter-spacing:1px;
-        white-space:nowrap;
-    }
-
-    .top-header{
-        padding:10px 5px;
-    }
-
+.navbar{
+    flex-direction:column;
+    gap:15px;
 }
 
-    .contact-header{
-        display:flex;
-        flex-direction:row;
-        justify-content:space-between;
-        align-items:center;
-        gap:5px;
-        flex-wrap:nowrap;
-        overflow-x:auto;
-        padding:10px 5px;
-    }
+.nav-links{
+    flex-direction:column;
+    text-align:center;
+}
 
-    .phone-link,
-    .email-link{
-        font-size:12px;
-        white-space:nowrap;
-    }
+.hero{
+    height:60vh;
+}
 
-    .share-btn{
-        font-size:12px;
-        padding:6px 10px;
-        white-space:nowrap;
-    }
+.hero h1{
+    font-size:35px;
+}
 
-    .hero h1{
-        font-size:30px;
-    }
-
-    .hero p{
-        font-size:16px;
-    }
-
+.hero p{
+    font-size:18px;
 }
 
 .logo{
-    font-size: 45px;
-    font-weight: 800;
-    text-align: center;
-    color: #fff;
-    letter-spacing: 3px;
-    margin: 15px 0;
-    text-transform: uppercase;
-    background: transparent;
+    font-size:26px;
 }
 
-.logo span{
-    color: #00d4ff;
-    text-shadow: 0 0 10px #00d4ff;
+.section-title{
+    font-size:28px;
+}
+
+.contact-header{
+    flex-direction:column;
+}
+
+.phone-link,
+.email-link,
+.share-btn,
+.call-btn,
+.book-btn{
+    width:100%;
+}
 }
